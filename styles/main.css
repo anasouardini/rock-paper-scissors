@@ -358,7 +358,6 @@ html {
 }
 html h2 {
   font-size: 2.5rem;
-  text-align: center;
   margin-bottom: 40px;
   font-weight: bold;
 }
@@ -368,6 +367,7 @@ html h2 {
 ===========================================*/
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -377,10 +377,6 @@ body {
 
 button, input, select, textarea {
   width: 190px;
-}
-
-p {
-  max-width: 550px;
 }
 
 a,
@@ -401,6 +397,7 @@ a:visited {
 ===========================================*/
 body {
   color: #444;
+  text-align: center;
 }
 
 .container {
@@ -434,6 +431,10 @@ body {
   background-image: url("../media/question.png");
   background-size: 13rem;
   background-position: center;
+}
+.output p {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .controls > button.card {
