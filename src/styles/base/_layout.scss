@@ -1,0 +1,78 @@
+/*===========================================
+================ CHUNK: BASE/LAYOUT
+===========================================*/
+@use "../abstracts/" as abstracts;
+
+
+body{
+    color: #444;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .card{
+        width: 6.5rem;
+        height: 10.2rem;
+        border: 1px solid black;
+    }
+
+    > div{
+        width: 100%;
+        & + div {
+            margin-top: 100px;
+        }
+    }
+}
+
+
+.output > .choices,
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.output{
+
+    .choices .card{
+        box-sizing: content-box;
+        border: 10px solid white;
+        outline: 10px solid black;
+        background-image: url("../media/question.png");
+        background-size: 13rem;
+        background-position: center;
+    }
+
+    p{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+.controls{
+
+    > button.card{
+        box-sizing: content-box;
+        cursor: pointer;
+        background: none;
+        border: 10px solid white;
+        outline: 10px solid black;
+        background-image: url("../media/rps.png");
+        background-size: 20rem;
+        &:nth-of-type(1){
+            background-position: .4rem 1.7rem;
+        }
+        &:nth-of-type(2){
+            background-position: center;
+        }
+        &:nth-of-type(3){
+            background-position: 26.5rem bottom;
+        }
+    }
+}
